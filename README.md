@@ -19,5 +19,12 @@ Export each combination with the given names above.
 
 The icons are installed at `~/.dropbox-dist/dropbox-lnx.x86_64-{VERSION}/images/hicolor/16x16/status`. Rename that directory and create a new `status` directory to place your new icons in. Then, copy (or link) the `dropboxstatus-blank.png` image from the old status directory to the new one.
 
+#### Gentoo
+
+If you installed 'net-misc/dropbox' package, follow below steps:
+1. `sudo rm -rf /usr/share/icons/hicolor/16x16/status/dropboxstatus-*`
+2. `sudo cp <DOWNLOAD_DIR>/light-icons/*.png /usr/share/icons/hicolor/48x48/status/`
+3. `sudo gtk-update-icon-cache -qf /usr/share/icons/hicolor/`
+
 ----------
 License: MIT <small>(with the additional restrictions that Dropbox places on using their logo at https://dropbox.com/branding)</small>
